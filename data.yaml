@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 7
+names: ['Anamoly', 'Female_Pilot', 'Male_Pilot', 'Pilot', 'bikes', 'car', 'helmet']
+
+roboflow:
+  workspace: traffic-detection-7z00n
+  project: motorcycle-8m0yj
+  version: 3
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/traffic-detection-7z00n/motorcycle-8m0yj/dataset/3
