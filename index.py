@@ -5,7 +5,7 @@ import json
 model = YOLO("runs/detect/train/weights/best.pt")
 
 
-image_path = "/Users/aldirahim/Documents/Project/Python/motorcycle.v3i.yolov8/test/images/frame_0654_png.rf.48f3f1a0eca45ab3cc382b91cf8434d8.jpg"
+image_path = "/Users/aldirahim/Documents/Project/Python/motorcycle.v3i.yolov8/test/images/frame_0750_png.rf.043b128cdc44a2cb29be8d34abaca6e6.jpg"
 img = cv2.imread(image_path)
 
 results = model(img, conf=0.4)
@@ -33,7 +33,7 @@ for r in results:
                     cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0,255,0), 2)
 
 
-cv2.imwrite("output.jpg", img)
+cv2.imwrite("output-2.jpg", img)
 
 
 print(json.dumps(detections, indent=2))
